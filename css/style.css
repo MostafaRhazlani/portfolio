@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+:root{
+    --primary-color: #D9233B;
+    --secondary-color: #171717;
+    --pading: 8%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+/***** global *******/
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-right: 30px;
+}
+
+a {
+    text-decoration: none; 
+}
+
+span {
+    color: var(--primary-color);
+}
+
+p {
+    color: white;
+}
+
+h3 {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+/****** Page home *******/
+
+.primary_nav {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.primary_nav header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 36px;
+}
+
+header ul a {
+    color: white;
+}
+
+header ul a:hover {
+    color: var(--primary-color);
+    border-bottom: solid var(--primary-color) 3px;
+}
+
+.active {
+    color: var(--primary-color);
+    border-bottom: solid var(--primary-color) 3px;
+}
+
+.home_view {
+    width: 90%;
+    height: 87vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.image {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+
+ img {
+    width: 400px;
+}
+
+.content_info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my_info {
+    margin-bottom: 30px;
+}
+
+.my_info p {
+    color: #72C1B2;
+}
+
+.my_info h1, .my_info h1 span{
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    font-style: normal;
+}
+
+.my_info h2 span{
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.content_info .btn {
+    width: 172px;
+    height: 48px;
+    border-radius: 29px;
+    background-color: var(--primary-color);
+    border: solid 3px transparent ;
+    transition: 0.7s;
+}
+
+.content_info .btn:hover {
+    width: 172px;
+    height: 48px;
+    border-radius: 29px;
+    background-color: transparent;
+    border: solid 3px var(--primary-color);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.social_media {
+    margin-top: 30px;
+}
+
+.social_media img {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.social_media img:hover {
+    transform: scale(1.2);
+}
+
+/********** page projects **********/
+
+.secondary_nav {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.secondary_nav header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.section_project {
+    background-color: var(--secondary-color);
+}
+
+.section_project .box {
+    width: 350px;
+    height: 200px;
+    background-color: black;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+
+.section_project .box:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+    transition: 0.7s;
+}
+
+.section_project1 {
+    background-color: black;
+}
+
+.section_project1 .box {
+    width: 350px;
+    height: 200px;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+
+.section_project1 .box:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+    transition: 0.7s;
+}
+
+.box img {
+    width: 300px;
+    transition: 0.7s;
+    border-radius: 10px;
+}
+
+article {
+    width: 500px;
+}
+
+article h4 {
+    margin-bottom: 4px;
+    font-size: 23px;
+}
+
+/********** Page Skills **********/
+
+.skills .contet_img {
+    width: 35%;
+}
+
+.skills .contet_img img {
+    width: 90%;
+}
+
+.content_skills {
+    width: 40%;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills .skill {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem 2rem 0;
+}
+
+.skill img {
+    width: 40px;
+}
+
+
+/************* footer *************/
+
+footer{
+    background-color: #27272A;
+    padding: 20px;
+}
+
+footer .center {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4{
+    font-size: 14px;
+    margin: 40px 0 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+}
+
+footer .copyright{
+    text-align: center;
+    width: 100%;
+}
+
+
